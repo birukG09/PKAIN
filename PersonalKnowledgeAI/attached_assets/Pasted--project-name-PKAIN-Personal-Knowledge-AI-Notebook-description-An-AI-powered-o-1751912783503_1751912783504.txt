@@ -1,0 +1,49 @@
+{
+  "project_name": "PKAIN - Personal Knowledge AI + Notebook",
+  "description": "An AI-powered, offline-first Markdown knowledge manager with a Python-heavy backend for AI, search, and data management, plus a lightweight React frontend for an elegant user interface.",
+  "stack": {
+    "backend": {
+      "language": "Python 3.11",
+      "framework": "FastAPI",
+      "responsibilities": [
+        "All AI processing (embedding, vector search, summarization)",
+        "Note storage and management (SQLite + Markdown files)",
+        "APIs to create/edit/delete notes, search notes, query AI",
+        "Export notes to PDF/HTML",
+        "Background indexing and embedding generation"
+      ],
+      "AI/NLP": [
+        "LangChain for AI orchestration",
+        "Sentence-Transformers for embedding generation",
+        "FAISS or Chroma for vector search database",
+        "Optional OpenAI or local LLaMA models for summarization"
+      ]
+    },
+    "frontend": {
+      "language": "JavaScript (React.js)",
+      "responsibilities": [
+        "Markdown editor with live preview (react-markdown)",
+        "UI to display notes, tags, search results",
+        "Send requests to Python backend API",
+        "Query input box for AI-powered question answering",
+        "Dark/light mode toggle",
+        "Responsive design with Tailwind CSS"
+      ],
+      "size": "Minimal JS bundle focused on UI and user experience"
+    }
+  },
+  "features": [
+    "Markdown note CRUD with tagging and folder support",
+    "Semantic AI-powered search over notes",
+    "Natural language question answering on personal notes",
+    "Export notes in multiple formats",
+    "Offline support using local vector DB and model",
+    "Simple, elegant, responsive frontend UI"
+  ],
+  "goals": [
+    "Ensure Python backend does most heavy lifting (70%)",
+    "Frontend focuses on delivering a smooth, modern UI (30%)",
+    "Build scalable and maintainable codebase",
+    "Learn AI integration and full-stack architecture"
+  ]
+}
